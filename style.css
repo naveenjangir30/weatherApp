@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rubik+Iso&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Slabo 27px", serif;
+}
+
+#main {
+  background: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+#temp {
+  position: absolute;
+  display: flex;
+  left: 17%;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+#temp > div > p {
+  font-size: 8vh;
+}
+
+#cityName {
+  text-transform: capitalize;
+}
+
+#left {
+  width: 63%;
+}
+
+#nav {
+  display: flex;
+}
+
+#nav img {
+  width: 65px;
+  margin: 10px 5px;
+}
+
+#nav h1 {
+  margin: auto;
+  font-size: 7vh;
+  font-family: "Kanit", sans-serif;
+  font-family: "Rubik Iso", cursive;
+  color: #dbeeff;
+}
+
+#right {
+  display: flex;
+  width: 37%;
+  opacity: 0.3;
+  background-color: #000000;
+  flex-direction: column;
+  position: relative;
+}
+
+#right #search {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 7px 5px;
+  padding: 5px;
+}
+
+#right #search input {
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  width: 70%;
+  color: white;
+  /* cursor: default; */
+  font-size: 4vh;
+}
+
+#right #search img {
+  height: 25px;
+  cursor: pointer;
+}
+
+#right #weatherDets {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  bottom: 15%;
+  padding: 3px 10px;
+  border-bottom: 1.5px solid #fff;
+}
+
+#weatherDets h3 {
+  font-size: 4vh;
+  font-weight: 500;
+  padding: 7px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#allDets {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 8%;
+}
+#allDets .weatherMap {
+  margin: 0px 20px;
+  display: flex;
+}
+#allDets .weatherMap img {
+  height: 18vh;
+}
+
+.data {
+  font-size: 6vh;
+  text-align: center;
+  padding: 8px 15px;
+}

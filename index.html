@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="left">
+        <div id="nav">
+          <img src="/images/logo.png" />
+          <h1>Weather App</h1>
+        </div>
+        <div id="temp">
+          <img src="/images/mist.png" alt="" />
+          <div class="data">
+            <p id="cityTemp"></p>
+            <p id="cityName"></p>
+          </div>
+        </div>
+        <div id="allDets">
+          <div class="weatherMap">
+            <img src="/images/humidity.png" alt="" />
+            <div class="data">
+              <p id="Humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="weatherMap">
+            <img src="/images/wind.png" alt="" />
+            <div class="data">
+              <p id="wind_speed"></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="search">
+          <input
+            type="search"
+            name="search"
+            id="searchCity"
+            placeholder="Search any place here"
+          />
+          <img src="images/search.png" id="searchimg" />
+        </div>
+        <div id="weatherDets">
+          <h3>Cloud_pct <span id="Cloud_pct"></span></h3>
+          <h3>Feels_like <span id="Feels_like"></span></h3>
+          <h3>Min_temp <span id="Min_temp"></span></h3>
+          <h3>Max_temp <span id="Max_temp"></span></h3>
+          <h3>Wind_degrees <span id="Wind_degrees"></span></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
